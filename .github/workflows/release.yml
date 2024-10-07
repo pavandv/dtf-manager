@@ -28,3 +28,18 @@ jobs:
         with:
           files: "target/release/dtf"
           generate_release_notes: true
+#      - uses: mislav/bump-homebrew-formula-action@v3
+#        if: ${{ !contains(github.ref, '-') }} # skip prereleases
+#        with:
+#          formula-name: my_formula
+#          formula-path: Formula/m/my_formula.rb
+#          homebrew-tap: Homebrew/homebrew-core
+#          base-branch: master
+#          download-url: https://example.com/foo/${{ steps.extract-version.outputs.tag-name }}.tar.gz
+#          commit-message: |
+#            {{formulaName}} {{version}}
+#
+#            Created by https://github.com/mislav/bump-homebrew-formula-action
+#        env:
+#          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
+#          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
