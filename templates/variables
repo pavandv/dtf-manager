@@ -1,0 +1,8 @@
+export DOT_FILES=${DOT_FILES:-~/.dotfiles};
+export EDITOR="cursor";
+export PROFILE_BROWSER="safari"
+export NVM_LAZY_LOAD=true
+export scmp="${HOME}/Personal"
+export scmw="${HOME}/Documents/Work"
+export scmp="${HOME}/Personal"
+export NVM_DIR=~/.nvm

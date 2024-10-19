@@ -1,0 +1,30 @@
+hyper       = {"cmd","alt","ctrl"}
+shift_hyper = {"cmd","alt","ctrl","shift"}
+ctrl_cmd    = {"cmd","ctrl"}
+
+hs.loadSpoon("SpoonInstall");
+
+Install=spoon.SpoonInstall
+
+Install:andUse("ClipboardTool", {
+    start = true,
+    hotkeys = {
+        toggle_clipboard = { shift_hyper, "h"}
+    }
+})
+
+Install:andUse("AppLauncher", {
+    config = {
+        modifiers = shift_hyper
+    },
+    hotkeys = {
+        a = "Arc",
+        c = "Cursor",
+        d = "Discord",
+        m = "Music",
+        n = "Notes",
+        r = "RustRover",
+        s = "Safari",
+        w = "Warp",
+    }
+})

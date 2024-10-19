@@ -1,0 +1,41 @@
+#cd
+# alias dtf="ci ${dtf_location}"
+alias desk="ci ${HOME}/Desktop"
+alias docu="ci ${HOME}/Documents"
+alias dld="ci ${HOME}/Downloads"
+alias dme="ci ${HOME}/Desktop/deleteme"
+alias gopa="ci ${GOPATH}"
+
+#source
+alias rsh="source ~/.zshrc"
+
+#finder
+alias o="open ."
+
+#code
+alias c="${EDITOR} ."
+alias dtfc="${EDITOR} ${dtf_location}"
+alias zshrc="${EDITOR} ${HOME}/.zshrc"
+
+alias sourcenvm="source /usr/local/opt/nvm/nvm.sh"
+alias h="history | grep -i "
+
+#Terraform
+alias t="terraform "
+alias ll="ls -alH "
+
+#scm
+alias scmp="ci ${scmp}"
+alias scmw="ci ${scmw}"
+alias scm="ci ${scmp}/${scm_primary_profile}"
+alias scmgl="ci ${scmp}/gitlab"
+alias scmgh="ci ${scmp}/github"
+alias scmbb="ci ${scmp}/bitbucket"
+
+#docker
+alias dkc="docker-compose "
+
+# Pulumi
+alias plm="pulumi"
+alias plmu="pulumi up"
+alias plmp="pulumi preview"
